@@ -18,9 +18,8 @@ void printStack(std::stack<int> & s){
 
 int main(){
     std::stack<int> s;
-    for(int i = 0 ; i < 10; ++i){
+    for(int i = 0 ; i < 10; ++i)
         s.push(i);
-    }
     auto start = std::chrono::steady_clock::now();
     printStack(s);
     auto end = std::chrono::steady_clock::now();
